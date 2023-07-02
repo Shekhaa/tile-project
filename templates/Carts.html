@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+      {% csrf_token %}
+     
+        {%for tilee in la%}
+       
+
+             {{tilee.product_name}}
+
+        {% endfor %}
+    
+{%endblock body%}

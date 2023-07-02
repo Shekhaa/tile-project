@@ -1,0 +1,125 @@
+
+		/* CSS styles for the page layout */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: color 0.3s;
+		}
+		
+		nav a:hover {
+			color: #c00;
+		}
+		
+		section {
+			background-color: #fff;
+			padding: 20px;
+		}
+		
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.tiles {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.tile {
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 200px;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.tile img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+		
+		.tile h2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		.tile p {
+			font-size: 14px;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+		
+		.tile button {
+			background-color: #c00;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		.tile button:hover {
+			background-color: #fff;
+			color: #c00;
+			border: 1px solid #c00;
+		}
+		
+		/* CSS styles for the footer */
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+		}

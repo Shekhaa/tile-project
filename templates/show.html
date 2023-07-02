@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Tiles</title>
+	{% load static %}
+	<style>
+		/* CSS styles for the page layout */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: color 0.3s;
+		}
+		
+		nav a:hover {
+			color: #c00;
+		}
+		
+		section {
+			background-color: #fff;
+			padding: 20px;
+		}
+		
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.tiles {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.tile {
+			margin: 30px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 200px;
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			
+		}
+		
+		.tile img {
+			width: 90%;
+			height: 90%;
+			object-fit: contain;
+		}
+		
+		.tile h2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		.tile p {
+			font-size: 14px;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+		
+		.tile button {
+			background-color: #c00;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		.tile button:hover {
+			background-color: #fff;
+			color: #c00;
+			border: 1px solid #c00;
+		}
+		
+		/* CSS styles for the footer */
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		Shopping Tiles
+	</header>
+	<nav>
+		<ul>
+			<li><a href="/home/index">Home</a></li>
+			<li><a href="#">Shop</a></li>
+            <li><a href="/home/about">About</a></li>
+            <li><a href="/home/contact">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </header>
+
+                  <section id="tiles">
+                    <div class="container">
+                      <h1>Shopped Tiles</h1>
+                  
+
+                <table border="2">
+        <tr>    <th>No.s</th>
+            <th>Name</th>
+            <th>Quantity selected</th>
+        </tr>
+
+    {%if dicts.0%}
+    <tr>
+    <td>1.</td>
+    <td>kaala_patthar</td>
+    <td>
+      {{dicts.0}} </td>
+      <td>
+      </tr>   
+      
+      {% endif %}
+
+      {%if dicts.1%}
+    <tr>
+    <td>2.</td>
+    <td>Daak_patthar</td>
+    <td>
+      {{dicts.1}} </td>
+      <td>
+      </tr>   
+      
+      {% endif %}
+      
+      {%if dicts.2%}
+      <tr>
+      <td>3.</td>
+      <td>Somany</td>
+      <td>
+        {{dicts.2}} </td>
+        {%endif%}
+
+   
+        {%if dicts.3%}
+        <tr>
+        <td>4.</td>
+        <td>Kajal</td>
+        <td>
+          {{dicts.3}} </td>
+          {%endif%}
+  
+   
+          {%if dicts.4%}
+          <tr>
+          <td>5.</td>
+          <td>Joote</td>
+          <td>
+            {{dicts.4}} </td>
+            {%endif%}
+    
+   
+            {%if dicts.5%}
+            <tr>
+            <td>6.</td>
+            <td>Nahi</td>
+            <td>
+              {{dicts.5}} </td>
+              {%endif%}
+      
+   
+              {%if dicts.6%}
+              <tr>
+              <td>7.</td>
+              <td>Laashe</td>
+              <td>
+                {{dicts.6}} </td>
+                {%endif%}
+        
+   
+                {%if dicts.7%}
+                <tr>
+                <td>8.</td>
+                <td>Bichengi</td>
+                <td>
+                  {{dicts.7}} </td>
+                  {%endif%}
+          
+   
+                  {%if dicts.8%}
+                  <tr>
+                  <td>9.</td>
+                  <td>Dulhe ki</td>
+                  <td>
+                    {{dicts.8}} </td>
+                    {%endif%}
+            
+   
+                    {%if dicts.9%}
+                    <tr>
+                    <td>10.</td>
+                    <td>Laas</td>
+                    <td>
+                      {{dicts.9}} </td>
+                      {%endif%}
+              
+                                                        
+<button onclick="history.back()">go BAck</button>
+                </body>
+                </html>
+                
+                
